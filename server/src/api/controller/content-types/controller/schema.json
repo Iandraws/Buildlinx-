@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "controllers",
+  "info": {
+    "singularName": "controller",
+    "pluralName": "controllers",
+    "displayName": "Controller",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Beschreibung": {
+      "type": "string"
+    },
+    "kosten": {
+      "type": "float"
+    },
+    "kapazitaet": {
+      "type": "decimal"
+    },
+    "Datum": {
+      "type": "date"
+    },
+    "Classe": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G"
+      ]
+    },
+    "Leistung": {
+      "type": "decimal"
+    },
+    "Hersteller": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Centrifugal",
+        " Diaphragm",
+        " Submersible ",
+        "Other"
+      ]
+    },
+    "Name": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}

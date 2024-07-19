@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ventils",
+  "info": {
+    "singularName": "ventil",
+    "pluralName": "ventils",
+    "displayName": "Ventil"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Beschreibung": {
+      "type": "string"
+    }
+  }
+}

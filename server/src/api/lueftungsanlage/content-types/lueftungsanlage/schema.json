@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lueftungsanlages",
+  "info": {
+    "singularName": "lueftungsanlage",
+    "pluralName": "lueftungsanlages",
+    "displayName": "Lüftungsanlage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Beschreibung": {
+      "type": "string"
+    },
+    "pumpes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pumpe.pumpe",
+      "inversedBy": "lueftungsanlages"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pumpes",
+  "info": {
+    "singularName": "pumpe",
+    "pluralName": "pumpes",
+    "displayName": "pumpe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Beschreibung": {
+      "type": "text"
+    },
+    "kapazitaet": {
+      "type": "decimal"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Centrifugal",
+        " Diaphragm",
+        " Submersible ",
+        "Other"
+      ]
+    },
+    "Leistung": {
+      "type": "decimal"
+    },
+    "MaxDurchfluss": {
+      "type": "decimal"
+    },
+    "heizkreislaeufes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::heizkreislaeufe.heizkreislaeufe",
+      "inversedBy": "pumpes"
+    },
+    "lueftungsanlages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lueftungsanlage.lueftungsanlage",
+      "mappedBy": "pumpes"
+    },
+    "kosten": {
+      "type": "decimal"
+    },
+    "Datum": {
+      "type": "date"
+    },
+    "Classe": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G"
+      ]
+    },
+    "Hersteller": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}
