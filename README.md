@@ -1,4 +1,4 @@
-# Buildlinx-
+# Buildlinx-Baukasten
 Baukasten-Anwendung für Pumpenverwaltung
 Beschreibung:
 Das Baukasten-Projekt ist eine Webanwendung, die entwickelt wurde, um die Verwaltung und Auswahl von Pumpenkomponenten zu vereinfachen. Die Anwendung richtet sich an Ingenieure und Techniker, die aus einer Vielzahl von Pumpenkomponenten die passenden auswählen, filtern und vergleichen möchten.
